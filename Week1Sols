@@ -1,0 +1,181 @@
+1. What are the T(n) and O(n) of this method?
+    public static int method1(int n) {
+          int val = 0; //1
+          for ( int i = n; i > 1; i /= 2) { //init 1 + logN + 1 + logN
+               Val++; //logN
+          }
+          return val; //1
+    };
+T(n) = 3logN + 4
+O(n) = logN
+
+
+1. Write the most restrictive Big-O of each of the following methods. 
+public void m1( int[] data) {
+    System.out.println(“1”);
+}
+O(1)
+
+public void m2 ( int[] data ) {
+    System.out.println(data.length);
+}
+
+O(1)
+
+public void m3 ( int[] data ) {
+    for (int i = 0; i < data.length; i++) {
+        System.out.println(data[i]);
+}
+}
+O(n)
+
+public void m4 (int m, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = m; i < n; j++) {
+            System.out.println(m + “ “ + n)
+        }
+    }
+}
+O(MN)
+
+public void m5 (int m, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = m; i < n; j++) {
+            return 0;
+        }
+    }
+}
+O(M)
+
+public void m6 (int[][] data) {
+    for (int r = 0; i < data.length; r++) {
+        for (int c = 0; c < data[0].length; c++) {
+            System.out.println(data[r][c];
+        }
+    }
+}
+O(MN)
+
+public void m7 (int n) {
+    if (n < 0) {
+        throw new IllegalArgumentException(“Parameter must be greater than 0”);
+    } else if (n == 0 || n == 1) {
+        return 1;
+}
+return m7(n-1) + m7(n-2);
+}
+O(2^n)
+
+public void m8(Integer[] data) {
+    Collections.sort(data);
+}
+O(NlogN)
+
+public void m9 ( int n) {
+    for (int i = n; i >=0; i/=2) {
+        System.out.println(i);
+}
+}
+O(logN)
+
+public void m10(int n) {
+int count = 0;
+    for (int i = n; i > 0; i /= 2) {
+                for (int j = 0; j < i; j++) {
+                        count += 1;
+                }
+            }
+} 
+
+O(N)
+On the 1st iteration the j loop runs N times. In the 2nd iteration it runs n/2 times. On the ith iteration the loop j runs N/2^i times. Total number of runs is N + N/2 + N/4 + …. 1 = N * (1 + ½ + ¼ + ⅛ + ….) < 2*N. 
+
+public static int[] method11(int[] a, int[] b) {
+    int[] answer = new int[a.length + b.length];
+    int i = 0, j = 0, k = 0;
+    while (i < a.length && j < b.length) {
+        if (a[i] < b[j]) {
+            answer[k] = a[i];
+            i++;
+        }else {
+            answer[k] = b[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < a.length) {
+        answer[k] = a[i];
+        i++;
+        k++;
+    }
+
+    while (j < b.length) {
+        answer[k] = b[j];
+        j++;
+        k++;
+    }
+
+    return answer;
+}
+
+O(M+N)
+
+public static int factorial (int n) {
+  int ans = 1;
+  for(int i = n; i > 1; i--) {
+    ans *= i;
+  }
+  
+  return ans;
+}
+
+O(n)
+
+
+2. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
+
+Ex. parseInt(“123”) -> 123
+parseInt(“-123”) -> -123
+
+public static void parseInt(String s) {
+    int num = 0; 
+    int sign = 1;
+    if (s.charAt(0) == ‘-’) {
+        sign = -1;
+    }
+    int i = 0;
+    if (sign == -1) {
+        i = 1;
+    }
+    for (; i < s.length; i++) {
+        num * 10 + s.charAt(i);
+    }
+
+    num *= sign;
+    return sign;
+}
+
+
+3. A method is O(N^2). It takes 10 seconds for the method to run when N = 1,000. 
+What is the expected time for the method to run when N = 2,000? Your answer must be 
+Simplified.
+
+1000^2/2000^2 = 10/x
+¼=10/x
+x=40
+
+
+4. A method is O(Nlog2N). It takes 10 seconds for the method to run when N = 1,000. 
+What is the expected time for the method to run when N = 2,000? Your answer must be 
+simplified.
+
+
+1000log2(1000)/2000log2(2000) = .001/x
+
+10/22 = 10/x
+
+X = 22/10 * 10 = 22
+
+
+
