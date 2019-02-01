@@ -1,0 +1,21 @@
+What are the 3 main pillars of object oriented programming?
+
+Draft a class system that models the United States Social Security System.
+Think about what the major parts of the system are, and what information 
+each part will have. Work with a partner to draft this system. 
+
+Write a method that determines if a number is prime. How can you make this more efficient?
+
+Suppose you have a database of sensitive information. Many people have
+access to some parts of the database. Suppose I have access to data in 
+California. I create a chart based on this information. Suppose I allow 
+this chart to be shared because it doesn’t have any directly unsafe
+information. I should be able to share this with another person. On the
+other hand, suppose I create a chart and it does have sensitive information
+in it. If I send it to the other person, they should be able to see the
+chart with their data. How can we build a database that will accomplish this?
+Assume you have a file with each person and their clearance level, and another file 
+which has each row of data and its clearance level.
+
+Rotate an array of n elements to the right by k steps.
+For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
