@@ -1,0 +1,23 @@
+
+1. What is binary search? How is it different from linear search? 
+   Can we use binary search to search through any array? 
+   Implement this with a partner.
+2. Create a class named Shape. Draft out instance variables and
+   methods. Create 3 other classes that can inherit from this class.
+   Explain how this shows the 3 principles of Object Oriented Programming. 
+   What test case can you write to check that polymorphism works?
+   
+3. You are a professional robber planning to rob houses along a street.
+   Each house has a certain amount of money stashed, the only 
+   constraint stopping you from robbing each of them is that 
+   adjacent houses have security system connected and it will
+   automatically contact the police if two adjacent houses were
+   broken into on the same night.
+
+   Given a list of non-negative integers representing the amount
+   of money of each house, determine the maximum amount of money 
+   you can rob tonight without alerting the police.
+
+   public int rob(int[] nums) {
+      
+   }
