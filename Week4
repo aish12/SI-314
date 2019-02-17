@@ -1,0 +1,36 @@
+
+1. What is an interface?
+2. What is an API?
+
+3. Suppose you have written a time server which periodically 
+notifies its clients of the current date and time. Write an interface
+that the server could use to enforce a particular protocol on it's clients. 
+
+4. Given an array of integers, return indices of the two numbers such that
+they add up to a specific target. You may assume that each input would have
+exactly one solution, and you may not use the same element twice. You must
+implement the fastest solution. 
+
+public static (int[] data, int sum) {
+
+}
+
+5. You are writing a program that represents a map on a website. When
+someone reaches the website, they should be able to enter a location on the 
+map where they have been. The website will update with a representation of the 
+number of people who said they have been to a particular spot. They will enter
+their name along with it. The map should show countries, states, and cities. 
+When you click on a spot on the map, it should show you a list of who has been 
+there. 
+Design interfaces/API's to model this website. 
+
+6. 
+Given an array nums, write a function to move all 0's to the end of it
+while maintaining the relative order of the non-zero elements.
+
+For example, given nums = [0, 1, 0, 3, 12], after calling your function,
+nums should be [1, 3, 12, 0, 0].
+
+Note:
+You must do this in-place without making a copy of the array.
+Minimize the total number of operations 
