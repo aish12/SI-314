@@ -11,7 +11,7 @@ they add up to a specific target. You may assume that each input would have
 exactly one solution, and you may not use the same element twice. You must
 implement the fastest solution. 
 
-public static (int[] data, int sum) {
+public static int[] (int[] data, int sum) {
 
 }
 
