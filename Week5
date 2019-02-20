@@ -1,0 +1,126 @@
+1. Object Oriented Programming?
+public interface Ticket{
+   public int getPrice();
+   public boolean isDiscounted();
+}
+public class StandardTicket implements Ticket{
+
+   private int price;
+   public StandardTicket(int p){
+     price = p;
+   }
+   public int getPrice(){
+     return price;
+   }
+   public boolean isDiscounted(){
+      return false;
+   }
+   public void addFee(){
+      price += 10;
+   }
+}
+public class StudentTicket extends StandardTicket{
+
+   public StudentTicket(int p){
+      super(p);
+   }
+   public int getPrice(){
+      return super.getPrice() / 2;
+   }
+   public boolean isDiscounted(){
+      return true;
+   }
+}
+
+What is the output of the following code?
+Ticket t = new Ticket();
+System.out.println( t.getPrice() );
+
+StandardTicket st1 = new StandardTicket( 100 );
+System.out.println( st1.isDiscounted() );
+
+StudentTicket st2 = new StudentTicket( 100 );
+StandardTicket st3 = st2;
+System.out.println( st2 == st3 );
+
+StudentTicket st4 = new StudentTicket( 50 );
+st4.addFee();
+System.out.println( st4.getPrice() );
+
+Does this cause a syntax error? Why or why not?
+StandardTicket st5 = new StandardTicket( 200 );
+System.out.println( st5.toString() );
+
+
+Will this class compile? Why or why not?
+public class Coord implements Comparable{
+    public int x;
+    public int y;
+}
+
+2.
+
+public static int method2(int[] data, int n) {
+    for (int i = 1; i < n; i++) {
+        int temp = data[i];
+
+        int j = i-1;
+        while(j >= 0 && data[j] > temp) {
+          data[j+1] = data[j];
+          j--;
+        }
+        data[j+1] = temp
+    }
+}
+
+What is the T(N) of this method?
+What is the Big-O of this method?
+Suppose for N = 1,000,000, this method takes 4 seconds to complete.
+How long will it take for N=4,000,000?
+What does this method do?
+
+3. What is the Big-O of this method?
+
+public static int method3(int[] data, int n) {
+    int sum = 0;
+    for (int i = 0; i < data.length; i++) {
+        if(data[i] == tgt) {
+            for(int j = i; j < data.length; j++) {
+                sum += data[j];
+            }
+            return sum;
+        }
+    }
+}
+
+
+4. After coding in Java for a while, you keep getting confused about
+Strings being immutable. You decide to create a class called MutableString
+instead of this. You will not extend String. Because MutableString is mutable,
+you must also implement an iterator for your class. (The purpose of this exercise
+is to remember how to make an iterator. Don't pay too much attention to
+the other details).
+
+Additional Exercise:
+Implement the other methods of MutableString that you may need. If you have
+methods that are exactly the same for both String and MutableString,
+you can indicate that.
+
+6.
+Write a method isValidPalindrome that takes in a String and returns true if it
+is a palindrome, and false if not.
+
+Challenge: Given a non-empty string s, you may delete at most one character.
+Return true if you can make s a palindrome and false if you cannot.
+ex. "aba" -> true because its a palindrome
+ex. "abca" -> true because if you remove c it's a palindrome
+
+7. Given an array nums, write a function to move all 0's to the end of it
+while maintaining the relative order of the non-zero elements.
+
+For example, given nums = [0, 1, 0, 3, 12], after calling your function,
+nums should be [1, 3, 12, 0, 0].
+
+Note:
+You must do this in-place without making a copy of the array.
+Minimize the total number of operations 
