@@ -1,4 +1,4 @@
-1. Object Oriented Programming?
+1. Object Oriented Programming
 public interface Ticket{
    public int getPrice();
    public boolean isDiscounted();
@@ -106,7 +106,40 @@ Implement the other methods of MutableString that you may need. If you have
 methods that are exactly the same for both String and MutableString,
 you can indicate that.
 
-6.
+5. Given an array, return the first element that repeats. 
+
+Input:  data [] = {10, 5, 3, 4, 3, 5, 6}
+Output: 5 [5 is the first element that repeats]
+
+public static int returnFirstRepeatingElement(int[] data) {
+
+}
+
+6. Write an instance method merge for the Generic List class. Assume that the generic list 
+has already been sorted. merge takes in a sorted generic list (other). After this method
+is called, the Generic List will contain the members of both arrays in sorted order. 
+The generic type of the items in the list (E), will implement comparable. 
+
+
+ex. 
+GenericList<Integer> g1 = new GenericList<>({0, 1, 4, 5, 6, 9, 10});
+GenericList<Integer> g2 = new GenericList<>({0, 1, 2, 3, 4, 7, 8, 9, 10});
+
+
+g1.merge(g2);
+
+GenericList<Integer> g3 = new GenericList<> ({0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10});
+
+System.out.println(g1.equals(g2)); //returns true
+
+
+public void merge (GenericList<E> other) {
+
+}
+
+
+
+7.
 Write a method isValidPalindrome that takes in a String and returns true if it
 is a palindrome, and false if not.
 
@@ -115,7 +148,7 @@ Return true if you can make s a palindrome and false if you cannot.
 ex. "aba" -> true because its a palindrome
 ex. "abca" -> true because if you remove c it's a palindrome
 
-7. Given an array nums, write a function to move all 0's to the end of it
+8. Given an array nums, write a function to move all 0's to the end of it
 while maintaining the relative order of the non-zero elements.
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function,
