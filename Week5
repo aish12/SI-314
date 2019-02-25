@@ -134,8 +134,15 @@ public void merge (GenericList<E> other) {
 }
 
 
+7. Write an instance method subsetLessThan for the GenericList class. Given a target E val, 
+return a new GenericList of all values in the list less than val. The calling object is 
+not altered as a result of this method call.
 
-7.
+public GenericList<E> subsetLessThan(E val) {
+
+}
+
+8.
 Write a method isValidPalindrome that takes in a String and returns true if it
 is a palindrome, and false if not.
 
@@ -144,7 +151,7 @@ Return true if you can make s a palindrome and false if you cannot.
 ex. "aba" -> true because its a palindrome
 ex. "abca" -> true because if you remove c it's a palindrome
 
-8. Given an array nums, write a function to move all 0's to the end of it
+9. Given an array nums, write a function to move all 0's to the end of it
 while maintaining the relative order of the non-zero elements.
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function,
@@ -154,7 +161,7 @@ Note:
 You must do this in-place without making a copy of the array.
 Minimize the total number of operations 
 
-9. Here are a bunch of questions about maps you should know for the exam:
+10. Here are a bunch of questions about maps you should know for the exam:
 
 What happens if you try to store a key which is already present in a HashMap
 Can you store a duplicate key in HashMap?
@@ -162,5 +169,16 @@ Can you store a duplicate Value in a HashMap?
 What happens if you call .get() on a HashMap with a key that does not exist?
 What is the Big(O) of HashMap's get method?
 What is the Big(O) of HashMap's put method?
+What is the Big(O) of TreeMap's get method?
+What is the Big(O) of TreeMap's put method?
 
+11. Repeat from previous session. Implement twoSum. 
+Given an array of integers, return indices of the two numbers such that
+they add up to a specific target. You may assume that each input would have
+exactly one solution, and you may not use the same element twice. You must
+implement the fastest solution. 
+
+public static int[] (int[] data, int sum) {
+
+}
 
