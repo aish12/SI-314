@@ -173,8 +173,17 @@ What is the Big(O) of HashMap's put method?
 What is the Big(O) of TreeMap's get method?
 What is the Big(O) of TreeMap's put method?
 
-11. Repeat from previous session. Implement twoSum. 
-Given an array of integers, return indices of the two numbers such that
+11. Write a function to check whether 2 given strings are an anagram of each
+other or not. An anagram of a string is another string that contains the same characters, 
+only the order of the characters can be different. Use a HashMap to implement this
+
+Ex. "abcd" and "dabc" are anagrams of each other. 
+
+public static boolean isAnagram(String s1, String s2) {
+
+}
+
+12. Given an array of integers, return indices of the two numbers such that
 they add up to a specific target. You may assume that each input would have
 exactly one solution, and you may not use the same element twice. You must
 implement the fastest solution. 
@@ -183,7 +192,7 @@ public static int[] (int[] data, int sum) {
 
 }
 
-12. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
+13. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
 
 Ex. parseInt(“123”) -> 123
 parseInt(“-123”) -> -123
