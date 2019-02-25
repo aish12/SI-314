@@ -94,8 +94,16 @@ public static int method3(int[] data, int n) {
     }
 }
 
+4. A method is O(N^2). It takes 10 seconds for the method to run when N = 1,000. 
+What is the expected time for the method to run when N = 2,000? Your answer must be 
+Simplified.
 
-4. After coding in Java for a while, you keep getting confused about
+5. A method is O(Nlog2N). It takes 10 seconds for the method to run when N = 1,000. 
+What is the expected time for the method to run when N = 2,000? Your answer must be 
+simplified.
+
+
+6. After coding in Java for a while, you keep getting confused about
 Strings being immutable. You decide to create a class called MutableString
 instead of this. You will not extend String. Because MutableString is mutable,
 you must also implement an iterator for your class. (The purpose of this exercise
@@ -107,7 +115,7 @@ Implement the other methods of MutableString that you may need. If you have
 methods that are exactly the same for both String and MutableString,
 you can indicate that.
 
-5. Given an array, return the first element that repeats. 
+7. Given an array, return the first element that repeats. 
 
 Input:  data [] = {10, 5, 3, 4, 3, 5, 6}
 Output: 5 [5 is the first element that repeats]
@@ -116,7 +124,7 @@ public static int returnFirstRepeatingElement(int[] data) {
 
 }
 
-6. Write an instance method merge for the Generic List class. Assume that the generic list 
+8. Write an instance method merge for the Generic List class. Assume that the generic list 
 has already been sorted. merge takes in a sorted generic list (other). After this method
 is called, the Generic List will contain the members of both arrays in sorted order. 
 The generic type of the items in the list (E), will implement comparable. 
@@ -135,7 +143,7 @@ public void merge (GenericList<E> other) {
 }
 
 
-7. Write an instance method subsetLessThan for the GenericList class. Given a target E val, 
+9. Write an instance method subsetLessThan for the GenericList class. Given a target E val, 
 return a new GenericList of all values in the list less than val. The calling object is 
 not altered as a result of this method call.
 
@@ -143,7 +151,7 @@ public GenericList<E> subsetLessThan(E val) {
 
 }
 
-8.
+10.
 Write a method isValidPalindrome that takes in a String and returns true if it
 is a palindrome, and false if not.
 
@@ -152,7 +160,7 @@ Return true if you can make s a palindrome and false if you cannot.
 ex. "aba" -> true because its a palindrome
 ex. "abca" -> true because if you remove c it's a palindrome
 
-9. Given an array nums, write a function to move all 0's to the end of it
+11. Given an array nums, write a function to move all 0's to the end of it
 while maintaining the relative order of the non-zero elements.
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function,
@@ -162,7 +170,7 @@ Note:
 You must do this in-place without making a copy of the array.
 Minimize the total number of operations 
 
-10. Here are a bunch of questions about maps you should know for the exam:
+12. Here are a bunch of questions about maps you should know for the exam:
 
 What happens if you try to store a key which is already present in a HashMap
 Can you store a duplicate key in HashMap?
@@ -173,7 +181,7 @@ What is the Big(O) of HashMap's put method?
 What is the Big(O) of TreeMap's get method?
 What is the Big(O) of TreeMap's put method?
 
-11. Write a function to check whether 2 given strings are an anagram of each
+13. Write a function to check whether 2 given strings are an anagram of each
 other or not. An anagram of a string is another string that contains the same characters, 
 only the order of the characters can be different. Use a HashMap to implement this
 
@@ -183,7 +191,7 @@ public static boolean isAnagram(String s1, String s2) {
 
 }
 
-12. Given an array of integers, return indices of the two numbers such that
+14. Given an array of integers, return indices of the two numbers such that
 they add up to a specific target. You may assume that each input would have
 exactly one solution, and you may not use the same element twice. You must
 implement the fastest solution. 
@@ -192,7 +200,7 @@ public static int[] (int[] data, int sum) {
 
 }
 
-13. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
+15. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
 
 Ex. parseInt(“123”) -> 123
 parseInt(“-123”) -> -123
