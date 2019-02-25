@@ -69,11 +69,12 @@ public static int method2(int[] data, int n) {
           data[j+1] = data[j];
           j--;
         }
-        data[j+1] = temp
+        data[j+1] = temp;
     }
+    
+    return -1;
 }
 
-What is the T(N) of this method?
 What is the Big-O of this method?
 Suppose for N = 1,000,000, this method takes 4 seconds to complete.
 How long will it take for N=4,000,000?
@@ -182,3 +183,11 @@ public static int[] (int[] data, int sum) {
 
 }
 
+12. Write a method parseInt. parseInt takes in a String, and returns the integer representation of that String. 
+
+Ex. parseInt(“123”) -> 123
+parseInt(“-123”) -> -123
+
+public static void parseInt(String s) {
+	
+}
