@@ -145,7 +145,7 @@ public void merge (GenericList<E> other) {
 
 9. Write an instance method subsetLessThan for the GenericList class. Given a target E val, 
 return a new GenericList of all values in the list less than val. The calling object is 
-not altered as a result of this method call.
+not altered as a result of this method call. E implements comparable
 
 public GenericList<E> subsetLessThan(E val) {
 
