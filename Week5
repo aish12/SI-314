@@ -134,8 +134,8 @@ ex.
 GenericList<Integer> g1 = new GenericList<>({0, 1, 4, 5, 6, 9, 10});
 GenericList<Integer> g2 = new GenericList<>({0, 1, 2, 3, 4, 7, 8, 9, 10});
 g1.merge(g2);
-GenericList<Integer> g3 = new GenericList<> ({0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 9, 10, 10});
-System.out.println(g1.equals(g2)); //returns true
+GenericList<Integer> g3 = new GenericList<> ({0, 0, 1 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 9, 10, 10});
+System.out.println(g1.equals(g3)); //returns true
 
 
 public void merge (GenericList<E> other) {
