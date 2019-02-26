@@ -205,6 +205,6 @@ public static int[] (int[] data, int sum) {
 Ex. parseInt(“123”) -> 123
 parseInt(“-123”) -> -123
 
-public static void parseInt(String s) {
+public static int parseInt(String s) {
 	
 }
