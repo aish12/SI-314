@@ -1,0 +1,33 @@
+1. What are the Big-O's of the following methods in a singly linked list?
+- addLast
+- addFirst
+- insert
+- remove (index)
+- removeFront
+- removeBack
+
+2. Partner up: exercise with how insert works with a linked list
+
+3. Assume you have a linked list which is sorted. Write the binarySearch method for linkedList. 
+Recall you are searching for the first index at which tgt occurs
+public int binarySearch(E tgt) {
+
+}
+
+4. Write an instance method removeMiddle for the LinkedList class. Assume you have a singlyLinked list
+
+public void removeMiddle() {
+
+}
+
+5. What are the 4 steps you need to keep in mind while programming recursive methods?
+
+6. Write a recursive method to compute the nth fibonacci number. Draw the stack associated with how your program is run
+The nth fibonacci number is computer by taking the sum of the previous 2 recursive numbers
+fib(1) = 1
+fib(2) = 1
+fib(3) = 2
+fib(4) = 3
+fib(5) = 5
+fib(6) = 8
+fib(7) = 13
