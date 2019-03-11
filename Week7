@@ -27,3 +27,55 @@ removeVowels("recurse") -> "rcrs"
 public int factorial(int n) {
 
 }
+
+6. Recursive Backtracking
+
+Write a method rollDice that takes in an int n for the number of dice to roll. 
+Compute every possible combination of n dice using recursive tracking. You do not need 
+to return anything, simply print out each complete combination. 
+
+ex. rollDice(1) prints...
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+
+rollDice(2) prints... 
+[1, 1]
+[1, 2]
+[1, 3]
+[1, 4]
+[1, 5]
+[1, 6]
+[2, 1]
+[2, 2]
+[2, 3]
+[2, 4]
+[2, 5]
+[2, 6]
+[3, 1]
+[3, 2]
+[3, 3]
+[3, 4]
+[3, 5]
+[3, 6]
+[4, 1]
+[4, 2]
+[4, 3]
+[4, 4]
+[4, 5]
+[4, 6]
+[5, 1]
+[5, 2]
+[5, 3]
+[5, 4]
+[5, 5]
+[5, 6]
+[6, 1]
+[6, 2]
+[6, 3]
+[6, 4]
+[6, 5]
+[6, 6]
