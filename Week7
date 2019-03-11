@@ -1,0 +1,29 @@
+1. What are the 4 steps you need to keep in mind while programming recursive methods?
+
+2. Write a recursive method to compute the nth fibonacci number. Draw the stack associated with how your program is run
+The nth fibonacci number is computer by taking the sum of the previous 2 recursive numbers. Big(O)
+fib(1) = 1
+fib(2) = 1
+fib(3) = 2
+fib(4) = 3
+fib(5) = 5
+fib(6) = 8
+fib(7) = 13
+
+3. Write an instance method get for the LinkedList class. For this question, you may use the Node classes' getNext() method
+to iterate through the linked list. You must implement this method recursively. Big(O)?
+
+public E get(int index) {
+  
+}
+
+4. Write a method that removes the vowels from a string. 
+
+Example: 
+removeVowels("recurse") -> "rcrs"
+
+5. Write a method to compute the factorial of a number n. Write this method using recursion.
+
+public int factorial(int n) {
+
+}
