@@ -1,0 +1,106 @@
+1. Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+https://leetcode.com/problems/valid-parentheses/description/
+
+2. Given a list of daily temperatures, produce a list that, for each day in the input, 
+tells you how many days you would have to wait until a warmer temperature. If there is
+no future day for which this is possible, put 0 instead.
+
+For example, given the list temperatures = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].
+
+Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].
+
+https://leetcode.com/problems/daily-temperatures/description/
+
+3. 
+We are given an array asteroids of integers representing asteroids in a row.
+
+For each asteroid, the absolute value represents its size, and the sign represents its
+direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+
+Find out the state of the asteroids after all collisions. If two asteroids meet, the
+smaller one will explode. If both are the same size, both will explode. Two asteroids
+moving in the same direction will never meet.
+
+Example 1:
+Input: 
+asteroids = [5, 10, -5]
+Output: [5, 10]
+Explanation: 
+The 10 and -5 collide resulting in 10.  The 5 and 10 never collide.
+Example 2:
+Input: 
+asteroids = [8, -8]
+Output: []
+Explanation: 
+The 8 and -8 collide exploding each other.
+Example 3:
+Input: 
+asteroids = [10, 2, -5]
+Output: [10]
+Explanation: 
+The 2 and -5 collide resulting in -5.  The 10 and -5 collide resulting in 10.
+Example 4:
+Input: 
+asteroids = [-2, -1, 1, 2]
+Output: [-2, -1, 1, 2]
+Explanation: 
+The -2 and -1 are moving left, while the 1 and 2 are moving right.
+Asteroids moving the same direction never meet, so no asteroids will meet each other.
+Note:
+
+The length of asteroids will be at most 10000.
+Each asteroid will be a non-zero integer in the range [-1000, 1000].
+
+https://leetcode.com/problems/asteroid-collision/description/
+4. Given an integer, we need to find the super digit of the integer.
+
+We define super digit of an integer x using the following rules:
+
+If x has only  1 digit, then its super digit is x.
+Otherwise, the super digit of x is equal to the super digit of the digit-sum of x. 
+Here, digit-sum of a number is defined as the sum of its digits.
+For example, super digit of 9875 will be calculated as:
+
+super_digit(9875) = super_digit(9+8+7+5) 
+                  = super_digit(29) 
+                  = super_digit(2+9)
+                  = super_digit(11)
+                  = super_digit(1+1)
+                  = super_digit(2)
+                  = 2.
+You are given two numbers n and k. You have to calculate the super digit of p.
+
+p is created when number n is concatenated k times. That is, if n=123 and k=3, then p=123123123.
+
+Input Format
+
+The first line contains two space separated integers, n and k.
+
+Constraints
+n <= n <= 10^100,000
+1 <= k <= 10^5
+
+Output Format
+Output the super digit of p, where p is created as described above.
+
+Sample Input 0
+148 3
+
+Sample Output 0
+3
+
+Explanation 0
+
+Here n=148 and k=3, so P=148148148.
+
+super_digit(P) = super_digit(148148148) 
+               = super_digit(1+4+8+1+4+8+1+4+8)
+               = super_digit(39)
+               = super_digit(3+9)
+               = super_digit(12)
+               = super_digit(1+2)
+               = super_digit(3)
+               = 3.
+ https://www.hackerrank.com/challenges/recursive-digit-sum/problem
