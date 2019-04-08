@@ -1,0 +1,102 @@
+Review! Spend 5 minutes talking with a friend about what you need to work on for the exam!
+
+We'll spend about 10 minutes per problem. 
+
+
+BinarySearchTree:
+1. What are red black trees? What properties do they hold? Is it inefficient to implement one?
+2. 
+
+Invert a binary tree.
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        
+    }
+}
+
+https://leetcode.com/problems/invert-binary-tree/description/
+
+
+
+
+Recursive Backtracking:
+3. Given a set of candidate numbers (C) (without duplicates) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+
+The same repeated number may be chosen from C unlimited number of times.
+
+Note:
+All numbers (including target) will be positive integers.
+The solution set must not contain duplicate combinations.
+For example, given candidate set [2, 3, 6, 7] and target 7, 
+A solution set is: 
+[
+  [7],
+  [2, 2, 3]
+]
+
+public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        
+    }
+
+
+
+
+
+LinkedLists
+4.  Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        
+    }
+}
+
+https://leetcode.com/problems/merge-k-sorted-lists/description/
+
+5. Sort a linked list using insertion sort.
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode insertionSortList(ListNode head) {
+        
+    }
+}
+
+https://leetcode.com/problems/insertion-sort-list/description/
