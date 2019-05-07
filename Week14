@@ -17,7 +17,7 @@ Output: i like ice cream and man go
         i like icecream and man go
         i like icecream and mango
 
-public void wordBreakUtil(String str, int n, String result) 
+public void wordBreakUtil(String str, ArrayList<String> dictionary) 
 { 
 
 
